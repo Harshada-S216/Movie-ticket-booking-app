@@ -1,0 +1,49 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+         http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- CHANGE THESE -->
+    <groupId>com.harshada</groupId>
+    <artifactId>movie-ticket-booking-app</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <!-- Since your project has HTML + Java -->
+    <packaging>war</packaging>
+
+    <name>Movie Ticket Booking App</name>
+
+    <!-- Java version -->
+    <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+
+    <!-- Dependencies -->
+    <dependencies>
+
+        <!-- Servlet (for web projects) -->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>4.0.1</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- JSON (if you use it) -->
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20210307</version>
+        </dependency>
+
+    </dependencies>
+
+    <!-- Build config -->
+    <build>
+        <finalName>movie-ticket-booking</finalName>
+    </build>
+
+</project>
