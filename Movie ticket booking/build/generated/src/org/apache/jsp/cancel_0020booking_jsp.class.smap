@@ -1,0 +1,16 @@
+SMAP
+cancel_0020booking_jsp.java
+JSP
+*S JSP
+*F
++ 0 cancel booking.jsp
+cancel booking.jsp
++ 1 connection.jsp
+connection.jsp
+*L
+5:50
+5#1,12:51
+17,5:64
+21,6:69
+6#0,162:74
+*E

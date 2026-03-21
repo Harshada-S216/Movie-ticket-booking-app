@@ -1,0 +1,22 @@
+SMAP
+SearchRegistration_jsp.java
+JSP
+*S JSP
+*F
++ 0 SearchRegistration.jsp
+SearchRegistration.jsp
++ 1 connection.jsp
+connection.jsp
+*L
+5,2:50
+5#1,12:52
+17,5:65
+21,6:70
+7#0,110:75
+117,20:186
+136:206
+137:207,13
+138,2:220
+140,2:223
+141,15:225
+*E

@@ -1,0 +1,22 @@
+SMAP
+searchmovie_jsp.java
+JSP
+*S JSP
+*F
++ 0 searchmovie.jsp
+searchmovie.jsp
++ 1 connection.jsp
+connection.jsp
+*L
+5,2:50
+5#1,12:52
+17,5:65
+21,6:70
+7#0,130:75
+137,24:206
+160:230
+161:231,21
+162,3:252
+165,2:256
+166,15:258
+*E
