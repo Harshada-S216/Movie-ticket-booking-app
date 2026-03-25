@@ -5,37 +5,29 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <!-- CHANGE THESE -->
     <groupId>com.harshada</groupId>
     <artifactId>movie-ticket-booking-app</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    <!-- Since your project has HTML + Java -->
     <packaging>war</packaging>
 
     <name>Movie Ticket Booking App</name>
 
-    <!-- Java version -->
     <properties>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
+        <!-- Java Version -->
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
+
+        <!-- SonarQube -->
+        <sonar.host.url>http://3.111.36.235:9000</sonar.host.url>
+
+        <!-- Encoding -->
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
-    <properties>
-		<sonar.host.url>http://3.111.36.235:9000/</sonar.host.url>
-                <sonar.token>squ_9df52884d51ecde6de6a0f45ba52b5acc516b019</sonar.token>
-		<jdk.version>1.8</jdk.version>
-		<spring.version>5.1.2.RELEASE</spring.version>
-		<junit.version>4.11</junit.version>
-		<log4j.version>1.2.17</log4j.version>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-    </properties>
-
-    <!-- Dependencies -->
     <dependencies>
 
-        <!-- Servlet (for web projects) -->
+        <!-- Servlet API -->
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
@@ -43,18 +35,58 @@
             <scope>provided</scope>
         </dependency>
 
-        <!-- JSON (if you use it) -->
+        <!-- JSON -->
         <dependency>
             <groupId>org.json</groupId>
             <artifactId>json</artifactId>
             <version>20210307</version>
         </dependency>
 
+        <!-- Junit (Optional but recommended) -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.13.2</version>
+            <scope>test</scope>
+        </dependency>
+
     </dependencies>
 
-    <!-- Build config -->
     <build>
         <finalName>movie-ticket-booking</finalName>
+
+        <plugins>
+
+            <!-- Compiler Plugin -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.11.0</version>
+                <configuration>
+                    <source>21</source>
+                    <target>21</target>
+                </configuration>
+            </plugin>
+
+            <!-- WAR Plugin -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>3.4.0</version>
+                <configuration>
+                    <failOnMissingWebXml>false</failOnMissingWebXml>
+                </configuration>
+            </plugin>
+
+            <!-- SonarQube Plugin -->
+            <plugin>
+                <groupId>org.sonarsource.scanner.maven</groupId>
+                <artifactId>sonar-maven-plugin</artifactId>
+                <version>3.10.0.2594</version>
+            </plugin>
+
+        </plugins>
+
     </build>
 
 </project>
