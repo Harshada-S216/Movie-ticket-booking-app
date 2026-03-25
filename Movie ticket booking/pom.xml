@@ -19,7 +19,14 @@
         <maven.compiler.target>21</maven.compiler.target>
 
         <!-- SonarQube -->
-        <sonar.host.url>http://3.111.36.235:9000</sonar.host.url>
+        <sonar.host.url>http://3.111.36.235:9000/</sonar.host.url>
+                <sonar.token>squ_9df52884d51ecde6de6a0f45ba52b5acc516b019</sonar.token>
+		<jdk.version>1.8</jdk.version>
+		<spring.version>5.1.2.RELEASE</spring.version>
+		<junit.version>4.11</junit.version>
+		<log4j.version>1.2.17</log4j.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
         <!-- Encoding -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
